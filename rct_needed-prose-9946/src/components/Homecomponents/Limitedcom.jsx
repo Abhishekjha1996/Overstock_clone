@@ -12,10 +12,9 @@ interface FeatureProps {
 const Feature = ({ img, text, mage}) => {
   return (
     <Stack>
-     <Image src={img} 
-     w={120} h={100}  align={'center'}  justify={'center'}/>
-     <Image src={mage}  width={"150px"} height={"120px"} paddingTop={"-100px"} align={'center'}  justify={'center'} />
-      <Text color={'gray.600'}>{text}</Text>
+     <Image src={img} width={"full"} height={"50px"} align={'center'} justify={'center'} border={"1px solid red"} backgroundImage={""}/>
+     <Image src={mage}  width={"full"} height={"120px"}  align={'center'}  justify={'center'} border={"1px solid red"}  />
+      <Text color={'gray.600'} textAlign={"center"}>{text}</Text>
     </Stack>
   );
 };
@@ -23,12 +22,14 @@ const Feature = ({ img, text, mage}) => {
 export default function LimitedCom() {
   return (
     <Box p={6}>
+     <p width={"100px"} height={"100px"} fontSize={"5xl"} >{"Limited-Time Deals"}</p>
+      
       <SimpleGrid columns={{ base: 1, md: 6 }} spacing={8}>
         <Feature
           img ={'https://ak1.ostkcdn.com/img/mxc/11142022_HB_INTL-CAN_1.svg?imwidth=1920'}
           mage ={'https://images.pexels.com/photos/14300096/pexels-photo-14300096.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'}
           text={
-            'Lorem ipsum dolor.'
+            'select rugs'
           }
         />
         <Feature

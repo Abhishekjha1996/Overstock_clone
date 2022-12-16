@@ -1,21 +1,30 @@
 import React from "react";
-import First_picture from "../Homecomponents/picture";
+import Firstpicture from "../Homecomponents/picture";
 import LimitedCom from "../Homecomponents/Limitedcom";
 import Logos from "../Homecomponents/Logos";
 import Boxx from "../Homecomponents/Boxx";
 import LivingRoom from "../Homecomponents/LivingRoom";
 import BeautifulBox from "../Homecomponents/BeautifulBox";
 import BeautifulBed from "../Homecomponents/beautifulBed";
-
+import IndiaLogo from "../Homecomponents/IndiaLogo";
+import Navbar from "../Navbar";
+import SavingCombo from "../Homecomponents/SavingCompo";
+import OverStockCompo from "../Homecomponents/OverStockCompo";
+import WeStyle from "../Homecomponents/WeStyle";
+import TrendingSearch from "../Homecomponents/TrendingSearch";
 import Footer from "../Homecomponents/footer";
+
 
 const Home = () => {
 
     return(
         <>
-        <div> Home </div>
+        {/* <div> <IndiaLogo /> </div>
 
-        <div><First_picture /></div>
+        <div> <Navbar /> </div> */}
+        
+
+        <div> <Firstpicture /> </div>
         
         <div> <LimitedCom /> </div>
 
@@ -27,7 +36,10 @@ const Home = () => {
 
         <div> <BeautifulBox /> </div>
         <div> <BeautifulBed/> </div>
-
+        <div> <SavingCombo /> </div>
+        <div><OverStockCompo/></div>
+        <div> <WeStyle/> </div>
+        <div> <TrendingSearch /> </div>
 
         <div> < Footer /></div>
 

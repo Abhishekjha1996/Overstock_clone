@@ -9,7 +9,7 @@ import {
     useBreakpointValue,
   } from '@chakra-ui/react';
   
-  export default function First_picture() {
+  export default function Firstpicture() {
     return (
       <Flex
         w={'full%'}

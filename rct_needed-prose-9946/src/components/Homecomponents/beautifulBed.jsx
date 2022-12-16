@@ -9,7 +9,7 @@ import {
     useBreakpointValue,
   } from '@chakra-ui/react';
   
-  export default function Firstpicture() {
+  export default function BeautifulBed() {
     return (
       <Flex
         w={'full%'}
@@ -30,7 +30,7 @@ import {
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-              <img src="https://ak1.ostkcdn.com/img/mxc/12122022-HP-A1-INTL-V2-1400x550_DSK-INTL-2.svg" alt="frst" 
+              <img src="https://ak1.ostkcdn.com/img/mxc/12122022-SB-BedroomFurniture-1400x550_Promo2.svg?imwidth=1920" alt="frst" 
               width={"500000px"}
               height={"5000px"}/>
             </Text>

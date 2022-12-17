@@ -38,8 +38,8 @@ export default function IndiaLogo() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-        <Flex h={10} alignItems={'center'} justifyContent={'space-between'} borderBottom={"1px solid grey"} width={"full"}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} >
+        <Flex h={10} alignItems={'center'} justifyContent={'space-between'} borderBottom={"1px solid grey"} width={"full"}  >
         <Stack direction={'row'} spacing={1} alignItems={'center'} justifyContent={'center'}  >
           <Box> Ships to:</Box>
           <Box width={"7"} h={5}> <Image src='https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif' borderRadius={"100%"}/> </Box>

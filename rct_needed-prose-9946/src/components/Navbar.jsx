@@ -16,7 +16,9 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    SimpleGrid
   } from '@chakra-ui/react';
+
   import {
     HamburgerIcon,
     CloseIcon,
@@ -28,7 +30,7 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box>
+      <Box width={"100%"}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
@@ -38,7 +40,7 @@ import {
           borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'}>
+          align={'center'} position="fixed" width={"full"} >
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
@@ -147,7 +149,7 @@ import {
     );
   };
   
-  const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+  const DesktopSubNav = ({ label, href, subLabel, subbel }: NavItem) => {
     return (
       <Link
         href={href}
@@ -164,6 +166,10 @@ import {
               fontWeight={500}>
               {label}
             </Text>
+            
+            <Text fontSize={'sm'}>{subLabel}</Text>
+            <Text fontSize={'sm'}>{subbel}</Text>
+            <Text fontSize={'sm'}>{subLabel}</Text>
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
           <Flex
@@ -253,8 +259,34 @@ import {
   
   const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Inspiration',
-      children: [
+      label: 'Furnitures',
+        children: [
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          subbel: 'Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
         {
           label: 'Explore Design Work',
           subLabel: 'Trending Design to inspire you',
@@ -267,8 +299,11 @@ import {
         },
       ],
     },
+
+
+
     {
-      label: 'Inspiration',
+      label: 'Rugs',
       children: [
         {
           label: 'Explore Design Work',

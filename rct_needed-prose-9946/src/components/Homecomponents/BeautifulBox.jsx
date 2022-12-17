@@ -8,10 +8,13 @@ import { Stack, HStack, VStack, Box, Image, SimpleGrid, Text} from '@chakra-ui/r
 const BeautifulBox = () => {
     return (
     
+  <Box height={700}>
+    <Box height={70}> </Box>
+    <Box height={100}> <Text as='b' fontSize='4xl'> Beautiful Finds for Every Room</Text> </Box>
 
 
     <SimpleGrid columns={6} spacing={3}>
-  <Box w='200px' h='200px' border={"1px solid red"}  >
+  <Box w='200px' h='200px' >
   <Image src='https://ak1.ostkcdn.com/img/mxc/11192021-CatSilo-Furniture.png?imwidth=1920' width={"200"} height={"170"} alt='Dan Abramov' />
   <Text fontSize='2xl'> Furniture </Text>
   </Box>
@@ -60,6 +63,11 @@ const BeautifulBox = () => {
   <Text fontSize='2xl'> Furniture </Text>
   </Box>
   </SimpleGrid>
+
+
+
+
+  </Box>
     )
 
 

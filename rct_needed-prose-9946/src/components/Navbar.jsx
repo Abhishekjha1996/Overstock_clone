@@ -40,7 +40,11 @@ import {
           borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'} position="fixed" width={"full"} >
+          align={'center'} width={"full"} 
+          position="fixed"
+          top={10}  
+          
+          >
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}

@@ -6,7 +6,7 @@ const OverStockCompo = () => {
     return (
 
 
-        <Box width={"98%"} height={"500px"} margin={"auto"}>
+        <Box width={"98%"} height={"500px"} margin={"auto"} >
     
         <Box height={"80px"}> <Text as='b' fontSize='3xl'>Overstock Featured Brands</Text> </Box>
         

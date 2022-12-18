@@ -16,7 +16,7 @@ import {
         w={'full%'}
         h={'85vh'}
         backgroundImage={
-          'url(https://ak1.ostkcdn.com/img/mxc/12122022-HP-A1-INTL-V2-1400x550_DSK-INTL-min.jpg)'
+          'url(https://ak1.ostkcdn.com/img/mxc/10272022-MOPS-HP-Frame4.jpg?imwidth=1920)'
         }
         backgroundSize={'cover'}
         backgroundPosition={'center center'}>
@@ -24,7 +24,7 @@ import {
           w={'full'}
           justify={'center'}
           px={useBreakpointValue({ base: 4, md: 8 })}
-          bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
+          bgGradient={'transparent'}>
           <Stack maxW={'18xl'} align={'flex-start'} spacing={6}>
             <Text
               color={'white'}

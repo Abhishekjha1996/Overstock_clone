@@ -7,6 +7,7 @@ import {
     Text,
     Flex,
     Tag,
+    Image,
     useColorModeValue,
   } from '@chakra-ui/react';
   import { ReactNode } from 'react';
@@ -96,12 +97,19 @@ import {
               flexGrow: 1,
               ml: 8,
             }}>
-            <Logo />
+            <Image src={"https://files.slack.com/files-pri/T049HCT5N3H-F04FSV1TWKW/cc.png"} />
           </Flex>
           <Text pt={6} fontSize={'sm'} textAlign={'center'}>
             © 2022 Chakra Templates. All rights reserved
           </Text>
         </Box>
+
+
+
+            
+
+
+
       </Box>
     );
   }

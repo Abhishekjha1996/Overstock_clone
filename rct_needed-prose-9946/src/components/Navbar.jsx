@@ -1,4 +1,7 @@
 import React from "react";
+import {Link as SignUpLink} from "react-router-dom";
+import {Link as SignInLink} from "react-router-dom";
+import {Link as HomeLink} from "react-router-dom"
 
 import {
     Box,
@@ -59,13 +62,6 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Text
-              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-              fontFamily={'heading'}
-              color={useColorModeValue('gray.800', 'white')}>
-              Logo
-            </Text>
-  
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -76,6 +72,8 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
+           
+           <SignInLink to="/login">
             <Button
               as={'a'}
               fontSize={'sm'}
@@ -84,6 +82,9 @@ import {
               href={'#'}>
               Sign In
             </Button>
+            </SignInLink>
+
+            <SignUpLink to="/signup">
             <Button
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
@@ -96,6 +97,7 @@ import {
               }}>
               Sign Up
             </Button>
+            </SignUpLink>
           </Stack>
         </Flex>
   
@@ -322,7 +324,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Decor',
       children: [
         {
           label: 'Explore Design Work',
@@ -337,7 +339,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Bedding',
       children: [
         {
           label: 'Explore Design Work',
@@ -352,7 +354,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Home Improvement',
       children: [
         {
           label: 'Explore Design Work',
@@ -367,7 +369,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Kitchen',
       children: [
         {
           label: 'Explore Design Work',
@@ -382,7 +384,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Outdoor',
       children: [
         {
           label: 'Explore Design Work',
@@ -397,7 +399,7 @@ import {
       ],
     },
     {
-      label: 'Find Work',
+      label: 'Lighting',
       children: [
         {
           label: 'Job Board',
@@ -412,11 +414,48 @@ import {
       ],
     },
     {
-      label: 'Learn Design',
-      href: '#',
+      label: 'Kids & Baby',
+      children: [
+        {
+          label: 'Job Board',
+          subLabel: 'Find your dream design job',
+          href: '#',
+        },
+        {
+          label: 'Freelance Projects',
+          subLabel: 'An exclusive list for contract work',
+          href: '#',
+        },
+      ],
     },
     {
-      label: 'Hire Designers',
-      href: '#',
+      label: 'Gifts',
+      children: [
+        {
+          label: 'Job Board',
+          subLabel: 'Find your dream design job',
+          href: '#',
+        },
+        {
+          label: 'Freelance Projects',
+          subLabel: 'An exclusive list for contract work',
+          href: '#',
+        },
+      ],
+    },
+    {
+      label: 'More',
+      children: [
+        {
+          label: 'Job Board',
+          subLabel: 'Find your dream design job',
+          href: '#',
+        },
+        {
+          label: 'Freelance Projects',
+          subLabel: 'An exclusive list for contract work',
+          href: '#',
+        },
+      ],
     },
   ];

@@ -12,7 +12,7 @@ const OverStockCompo = () => {
         
         <Flex >
         <HStack spacing='24px'>
-                <Box width={"25%"} height={"400px"} bg={"white"}>
+                <Box width={"25%"} height={"400px"} >
                     <Image src={"https://ak1.ostkcdn.com/img/mxc/HP_C_Mod_33581952.jpg?imwidth=1920"} />
                     <Text height={"1px"} as='b'>extra 20% off</Text>
                     <Text height={"18px"} >select rugs by</Text>

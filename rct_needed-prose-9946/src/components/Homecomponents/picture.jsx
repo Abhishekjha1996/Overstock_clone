@@ -12,6 +12,8 @@ import {
   
   export default function Firstpicture() {
     return (
+
+
       <Box position={"static"} top={"150px"}>
         <Box height={20}></Box>
 

@@ -79,7 +79,7 @@ export default function IndiaLogo() {
                   </Center>
                   <br />
                   <Center>
-                    <p>Username</p>
+                    <p>Abhishek Jha</p>
                   </Center>
                   <br />
                   <MenuDivider />

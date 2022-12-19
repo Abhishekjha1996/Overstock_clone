@@ -1,3 +1,4 @@
+
 import {
     Box,
     Container,
@@ -97,10 +98,10 @@ import {
               flexGrow: 1,
               ml: 8,
             }}>
-            <Image src={"https://files.slack.com/files-pri/T049HCT5N3H-F04FSV1TWKW/cc.png"} />
+            <Image src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxoeh5i3p_axJ6GNlCQV6dRACGS2NV7S2Sg&usqp=CAU"} width={10} />
           </Flex>
           <Text pt={6} fontSize={'sm'} textAlign={'center'}>
-            © 2022 Chakra Templates. All rights reserved
+            Creative Creator : Masai School Student
           </Text>
         </Box>
 

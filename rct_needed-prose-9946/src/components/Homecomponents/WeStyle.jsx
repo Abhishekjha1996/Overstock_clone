@@ -12,7 +12,7 @@ const WeStyle = () => {
         
         <Flex >
         <HStack spacing='15px' alignContent={"center"} justifyContent={"center"}>
-                <Box width={"32%"} height={"470px"} bg={"white"} >
+                <Box width={"32%"} height={"470px"} >
                     <Image src={"https://ak1.ostkcdn.com/img/mxc/030822-SBS-MidCenMod.jpg?imwidth=1920"} />
                     <Text height={"1px"} as='b'>Mid-Centuries Modern</Text>
                     <Text height={"18px"} >select rugs by</Text>

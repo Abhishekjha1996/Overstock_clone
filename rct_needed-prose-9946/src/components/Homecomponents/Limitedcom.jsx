@@ -12,8 +12,8 @@ interface FeatureProps {
 const Feature = ({ img, text, mage}) => {
   return (
     <Stack>
-     <Image src={img} width={"full"} height={"50px"} align={'center'} justify={'center'} border={"1px solid red"} backgroundImage={""}/>
-     <Image src={mage}  width={"full"} height={"120px"}  align={'center'}  justify={'center'} border={"1px solid red"}  />
+     <Image src={img} width={"full"} height={"80px"} align={'center'} justify={'center'} />
+     <Image src={mage}  width={"full"} height={"120px"}  align={'center'}  justify={'center'}  />
       <Text color={'gray.600'} textAlign={"center"}>{text}</Text>
     </Stack>
   );
@@ -22,7 +22,8 @@ const Feature = ({ img, text, mage}) => {
 export default function LimitedCom() {
   return (
     <Box p={6}>
-     <p width={"100px"} height={"100px"} fontSize={"5xl"} >{"Limited-Time Deals"}</p>
+      
+      <Box><Text  fontSize='3xl' as='b' >{"Limited-Time Deals"}</Text></Box>
       
       <SimpleGrid columns={{ base: 1, md: 6 }} spacing={8}>
         <Feature

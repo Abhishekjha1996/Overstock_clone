@@ -1,4 +1,7 @@
 import React from "react";
+import {Link as SignUpLink} from "react-router-dom";
+import {Link as SignInLink} from "react-router-dom";
+import {Link as HomeLink} from "react-router-dom"
 
 import {
     Box,
@@ -16,7 +19,9 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    SimpleGrid
   } from '@chakra-ui/react';
+
   import {
     HamburgerIcon,
     CloseIcon,
@@ -28,7 +33,7 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box>
+      <Box width={"100%"}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
@@ -38,7 +43,11 @@ import {
           borderBottom={1}
           borderStyle={'solid'}
           borderColor={useColorModeValue('gray.200', 'gray.900')}
-          align={'center'}>
+          align={'center'} width={"full"} 
+          position="fixed"
+          top={10}  
+          
+          >
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
@@ -53,13 +62,6 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Text
-              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-              fontFamily={'heading'}
-              color={useColorModeValue('gray.800', 'white')}>
-              Logo
-            </Text>
-  
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
             </Flex>
@@ -70,6 +72,8 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
+           
+           <SignInLink to="/login">
             <Button
               as={'a'}
               fontSize={'sm'}
@@ -78,6 +82,9 @@ import {
               href={'#'}>
               Sign In
             </Button>
+            </SignInLink>
+
+            <SignUpLink to="/signup">
             <Button
               display={{ base: 'none', md: 'inline-flex' }}
               fontSize={'sm'}
@@ -90,6 +97,7 @@ import {
               }}>
               Sign Up
             </Button>
+            </SignUpLink>
           </Stack>
         </Flex>
   
@@ -147,7 +155,7 @@ import {
     );
   };
   
-  const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+  const DesktopSubNav = ({ label, href, subLabel, subbel }: NavItem) => {
     return (
       <Link
         href={href}
@@ -164,6 +172,10 @@ import {
               fontWeight={500}>
               {label}
             </Text>
+            
+            <Text fontSize={'sm'}>{subLabel}</Text>
+            <Text fontSize={'sm'}>{subbel}</Text>
+            <Text fontSize={'sm'}>{subLabel}</Text>
             <Text fontSize={'sm'}>{subLabel}</Text>
           </Box>
           <Flex
@@ -253,7 +265,51 @@ import {
   
   const NAV_ITEMS: Array<NavItem> = [
     {
-      label: 'Inspiration',
+      label: 'Furnitures',
+        children: [
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          subbel: 'Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'Explore Design Work',
+          subLabel: 'Trending Design to inspire you',
+          href: '#',
+        },
+        {
+          label: 'New & Noteworthy',
+          subLabel: 'Up-and-coming Designers',
+          href: '#',
+        },
+      ],
+    },
+
+
+
+    {
+      label: 'Rugs',
       children: [
         {
           label: 'Explore Design Work',
@@ -268,7 +324,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Decor',
       children: [
         {
           label: 'Explore Design Work',
@@ -283,7 +339,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Bedding',
       children: [
         {
           label: 'Explore Design Work',
@@ -298,7 +354,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Home Improvement',
       children: [
         {
           label: 'Explore Design Work',
@@ -313,7 +369,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Kitchen',
       children: [
         {
           label: 'Explore Design Work',
@@ -328,7 +384,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
+      label: 'Outdoor',
       children: [
         {
           label: 'Explore Design Work',
@@ -343,22 +399,7 @@ import {
       ],
     },
     {
-      label: 'Inspiration',
-      children: [
-        {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
-          href: '#',
-        },
-        {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
-          href: '#',
-        },
-      ],
-    },
-    {
-      label: 'Find Work',
+      label: 'Lighting',
       children: [
         {
           label: 'Job Board',
@@ -373,11 +414,48 @@ import {
       ],
     },
     {
-      label: 'Learn Design',
-      href: '#',
+      label: 'Kids & Baby',
+      children: [
+        {
+          label: 'Job Board',
+          subLabel: 'Find your dream design job',
+          href: '#',
+        },
+        {
+          label: 'Freelance Projects',
+          subLabel: 'An exclusive list for contract work',
+          href: '#',
+        },
+      ],
     },
     {
-      label: 'Hire Designers',
-      href: '#',
+      label: 'Gifts',
+      children: [
+        {
+          label: 'Job Board',
+          subLabel: 'Find your dream design job',
+          href: '#',
+        },
+        {
+          label: 'Freelance Projects',
+          subLabel: 'An exclusive list for contract work',
+          href: '#',
+        },
+      ],
+    },
+    {
+      label: 'More',
+      children: [
+        {
+          label: 'Job Board',
+          subLabel: 'Find your dream design job',
+          href: '#',
+        },
+        {
+          label: 'Freelance Projects',
+          subLabel: 'An exclusive list for contract work',
+          href: '#',
+        },
+      ],
     },
   ];

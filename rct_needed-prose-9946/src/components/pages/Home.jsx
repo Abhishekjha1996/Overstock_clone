@@ -13,8 +13,6 @@ import OverStockCompo from "../Homecomponents/OverStockCompo";
 import WeStyle from "../Homecomponents/WeStyle";
 import TrendingSearch from "../Homecomponents/TrendingSearch";
 import Footer from "../Homecomponents/footer";
-
-
 const Home = () => {
 
     return(
@@ -22,8 +20,8 @@ const Home = () => {
         {/* <div> <IndiaLogo /> </div>
 
         <div> <Navbar /> </div> */}
-        
 
+       
         <div> <Firstpicture /> </div>
         
         <div> <LimitedCom /> </div>
@@ -42,6 +40,12 @@ const Home = () => {
         <div> <TrendingSearch /> </div>
 
         <div> < Footer /></div>
+
+       
+
+      
+
+
 
         </>
 

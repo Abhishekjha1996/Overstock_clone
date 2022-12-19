@@ -7,10 +7,16 @@ import {
     Text,
     VStack,
     useBreakpointValue,
+    Box,
   } from '@chakra-ui/react';
   
   export default function Firstpicture() {
     return (
+
+
+      <Box position={"static"} top={"150px"}>
+        <Box height={20}></Box>
+
       <Flex
         w={'full%'}
         h={'85vh'}
@@ -37,5 +43,7 @@ import {
           </Stack>
         </VStack>
       </Flex>
+
+      </Box>
     );
   }

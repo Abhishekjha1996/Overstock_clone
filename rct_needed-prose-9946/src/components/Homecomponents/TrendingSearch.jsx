@@ -5,8 +5,8 @@ import { SimpleGrid, Box } from "@chakra-ui/react";
 
 const TrendingSearch = () => {
     return (
-    <Box height={"500px"} border={"1px solid red"}>
-    <Box as="b" fontSize='4xl'> Trending Searches </Box>
+    <Box height={"450px"} >
+    <Box as="b" fontSize='4xl' height={150} > Trending Searches </Box>
     <SimpleGrid columns={3} spacingX='40px' spacingY='10px'>
     <Box bg='#F5F6F7' height='60px' as="b" fontSize='1xl' textAlign={ "center" } > Mugs </Box>
     <Box bg='#F5F6F7' height='60px' as="b" fontSize='1xl' >Blankets</Box>
